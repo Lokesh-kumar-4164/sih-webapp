@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wellness Hub - Dashboard</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --c-bg: #f0f5f3;
+        --c-text: #111714;
+        --c-primary: #38e07b;
+        --c-primary-light: #ebfdf2;
+        --c-secondary: #bfc9c4;
+        --c-secondary-light: #e1e8e5;
+        --c-card-bg: #ffffff;
+      }
+      body {
+        font-family: "Spline Sans", sans-serif;
+      }
+      .dark-mode {
+        --c-bg: #111714;
+        --c-text: #f0f5f3;
+        --c-primary: #38e07b;
+        --c-primary-light: #1a2e24;
+        --c-secondary: #29382f;
+        --c-secondary-light: #1e2923;
+        --c-card-bg: #1a201d;
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--c-bg)] text-[var(--c-text)] dark-mode">
+    <div
+      class="relative flex size-full min-h-screen flex-col overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--c-secondary)] px-6 sm:px-10 py-4"
+        >
+          <div class="flex items-center gap-3">
+            <div class="size-6 text-[var(--c-primary)]">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
+                ></path>
+              </svg>
+            </div>
+            <h1 class="text-xl font-bold">Wellness Hub</h1>
+          </div>
+          <div class="flex items-center gap-4">
+            <nav
+              class="hidden md:flex items-center gap-6 text-sm font-medium text-[var(--c-text)]"
+            >
+              <a
+                class="hover:text-[var(--c-primary)] transition-colors"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="hover:text-[var(--c-primary)] transition-colors"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="hover:text-[var(--c-primary)] transition-colors"
+                href="#"
+                >Resources</a
+              >
+              <a
+                class="hover:text-[var(--c-primary)] transition-colors"
+                href="#"
+                >About</a
+              >
+            </nav>
+            <div class="flex items-center gap-4">
+              <button class="md:hidden">
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSxE3fzIFx6o82G5ZqYggFFzMcyBZSbTnZft-U2qG7pPqOcEn6iTsxsBh3M-DyHKvFqRSjP9t5VO2ALO82_S17I69tHkvcPbl0E4HwbjSW0xopRkQFwlCrgzjJ7NMUqdyPR72Dp2xAcUKAAIUnbtYQfsuFMt87nDd8U7XCHs-Oh2PHZYrv0lPwSyLUfEtoBkMvv_JZrfCXZECzYuAAutWHDzHyEivqLIpRrIvKULPpSNJutYiYuqSLaI0OaxrLSz9E3gW1U6dCMvc');
+                "
+              ></div>
+            </div>
+          </div>
+        </header>
+        <main
+          class="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-12 text-center"
+        >
+          <div class="max-w-2xl w-full">
+            <h2
+              class="text-4xl md:text-5xl font-bold tracking-tight text-[var(--c-text)]"
+            >
+              Welcome, Sarah
+            </h2>
+            <p class="mt-4 text-lg text-[var(--c-text)]/80">
+              Your well-being is our priority. Access support and resources
+              tailored for you.
+            </p>
+            <div
+              class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto"
+            >
+              <div
+                class="bg-[var(--c-card-bg)] border border-[var(--c-secondary)] rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="bg-[var(--c-primary-light)] p-4 rounded-full mb-4">
+                  <span
+                    class="material-symbols-outlined text-4xl text-[var(--c-primary)]"
+                  >
+                    event_available
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold text-[var(--c-text)] mb-2">
+                  Schedule an Appointment
+                </h3>
+                <p class="text-[var(--c-text)]/70 mb-6">
+                  Book a confidential session with one of our counselors.
+                </p>
+                <button
+                  class="w-full flex items-center justify-center rounded-full h-12 px-6 bg-[var(--c-primary)] text-black font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity"
+                >
+                  <span class="truncate">Schedule Now</span>
+                </button>
+              </div>
+              <div
+                class="bg-[var(--c-card-bg)] border border-[var(--c-secondary)] rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div
+                  class="bg-[var(--c-secondary-light)] p-4 rounded-full mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-4xl text-[var(--c-text)]"
+                  >
+                    support_agent
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold text-[var(--c-text)] mb-2">
+                  Access Helpline
+                </h3>
+                <p class="text-[var(--c-text)]/70 mb-6">
+                  Immediate support is available 24/7. You are not alone.
+                </p>
+                <button
+                  class="w-full flex items-center justify-center rounded-full h-12 px-6 bg-[var(--c-secondary)] text-[var(--c-text)] font-bold leading-normal tracking-wide hover:bg-opacity-80 transition-opacity"
+                >
+                  <span class="truncate">Call Helpline</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="text-center py-6 text-sm text-[var(--c-text)]/60 border-t border-[var(--c-secondary)]"
+        >
+          <p>© 2024 University Wellness Hub. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
